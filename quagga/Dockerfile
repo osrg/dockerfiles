@@ -7,7 +7,7 @@ FROM ubuntu:14.04
 MAINTAINER FUJITA Tomonori <fujita.tomonori@lab.ntt.co.jp>
 
 RUN apt-get update
-RUN apt-get install -qy --no-install-recommends supervisor quagga telnet
+RUN apt-get install -qy --no-install-recommends supervisor quagga telnet tcpdump
 
 RUN sed -i 's/bgpd=no/bgpd=yes/g' /etc/quagga/daemons
 RUN sed -i 's/zebra=no/zebra=yes/g' /etc/quagga/daemons
