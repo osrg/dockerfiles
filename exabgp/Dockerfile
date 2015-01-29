@@ -1,20 +1,19 @@
 # EXA BGP
 #
-# Vertion 3.4.5
+# Commit version to be use [ bb7d1b7b539a48ca331c05a474f1af6015424273 ]
 
 FROM ubuntu:14.04
 
 MAINTAINER Naoto Hanaue <hanaue.naoto@po.ntts.co.jp>
 
 RUN apt-get update
-RUN apt-get install -qy --no-install-recommends wget python
+RUN apt-get install -qy --no-install-recommends wget python git
 
 ENV HOME /root
 WORKDIR /root
 
-RUN wget --no-check-certificate https://github.com/Exa-Networks/exabgp/archive/3.4.5.tar.gz
-RUN tar xzvf 3.4.5.tar.gz
-RUN rm 3.4.5.tar.gz
-RUN mv exabgp-3.4.5/ /usr/local/exabgp
+RUN git config --global http.sslVerify false
+RUN git clone http://github.com/Exa-Networks/exabgp.git
+RUN cd exabgp; git reset --hard bb7d1b7b539a48ca331c05a474f1af6015424273
 
-ADD exabgp.env /usr/local/exabgp/etc/exabgp/exabgp.env
+ADD exabgp.env /root/exabgp/etc/exabgp/exabgp.env
