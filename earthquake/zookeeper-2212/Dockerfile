@@ -1,4 +1,4 @@
-FROM akihirosuda/dind-ovs-ryu-pipework-superpack
+FROM akihirosuda/dind-ovs-superpack
 MAINTAINER Akihiro Suda <suda.akihiro@lab.ntt.co.jp>
 
 # Earthquake v0.1 (Jun 10, 2015)
