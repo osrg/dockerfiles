@@ -8,7 +8,7 @@ ENV EARTHQUAKE_GIT_COMMIT v0.1
 ENV LOG file
 
 # Install ryu (Earthquake v0.1 is tested with ryu v3.20.2)
-RUN pip uninstall ryu && pip install ryu==3.20.2
+RUN pip uninstall -y ryu && pip install ryu==3.20.2
 
 # Install pipework (our patched version for avoidance of veth name conflicts)
 RUN wget --no-check-certificate --quiet https://raw.githubusercontent.com/osrg/pipework/fix-pid-conflict/pipework -O /usr/local/bin/pipework
