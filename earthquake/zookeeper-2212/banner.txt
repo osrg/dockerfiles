@@ -1,3 +1,3 @@
-=== Earthquake Demo: distributed race condition related to QV version ===
+=== Earthquake Demo: ZOOKEEPER-2212(distributed race condition related to QV version) ===
  * Please run 000-prepare.sh first, then run 100-run-experiment.sh several times. README.md might be useful.
  * For further information, please refer to https://github.com/osrg/earthquake .

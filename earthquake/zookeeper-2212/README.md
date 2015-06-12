@@ -4,14 +4,14 @@
 
 Earthquakes permutes C/Java function calls, Ethernet packets, and injected fault events in various orders so as to find implementation-level bugs of the distributed system.
 
-We have successfully found a distributed race condition bug (will be ZOOKEEPER-2212) of ZooKeeper using Earthquake.
+We have successfully found a distributed race condition bug ([ZOOKEEPER-2212](https://issues.apache.org/jira/browse/ZOOKEEPER-2212)) of ZooKeeper using Earthquake.
 This container can reproduce the bug we found.
 
 For further information, please refer to https://github.com/osrg/earthquake/tree/v0.1/example/zk-found-bug.ether
 
 
 ## Usage
-
+Available on Docker Hub: [osrg/earthquake-zookeeper-2212](https://registry.hub.docker.com/u/osrg/earthquake-zookeeper-2212/)
     
     host$ sudo modprobe openvswitch
     host$ docker run --privileged -t -i --rm osrg/earthquake-zookeeper-2212
