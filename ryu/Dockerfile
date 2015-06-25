@@ -2,12 +2,12 @@
 #
 # VERSION 0.0.1
 
-FROM ubuntu:14.04
+FROM ubuntu:15.04
 
 MAINTAINER FUJITA Tomonori <fujita.tomonori@lab.ntt.co.jp>
 
 RUN apt-get update
-RUN apt-get install -qy --no-install-recommends python-setuptools python-pip python-eventlet python-lxml python-msgpack python-netaddr python-oslo.config python-paramiko python-routes python-six python-webob unzip wget
+RUN apt-get install -qy --no-install-recommends python-setuptools python-pip python-eventlet python-lxml python-msgpack unzip wget
 
 ENV HOME /root
 WORKDIR /root
