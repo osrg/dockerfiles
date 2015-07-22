@@ -1,7 +1,7 @@
 # gobgp (part of Ryu SDN Framework)
 #
 
-FROM golang:1.3
+FROM golang:1.4
 
 MAINTAINER FUJITA Tomonori <fujita.tomonori@lab.ntt.co.jp>
 
