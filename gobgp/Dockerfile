@@ -6,7 +6,7 @@ FROM golang:1.4
 MAINTAINER FUJITA Tomonori <fujita.tomonori@lab.ntt.co.jp>
 
 RUN apt-get update
-RUN apt-get install -qy --no-install-recommends wget lv tcpdump emacs24-nox
+RUN apt-get install -qy --no-install-recommends wget lv tcpdump emacs24-nox quagga telnet
 
 ENV HOME /root
 WORKDIR /root
