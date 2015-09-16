@@ -1,12 +1,12 @@
 # gobgp (part of Ryu SDN Framework)
 #
 
-FROM golang:1.4
+FROM osrg/quagga
 
 MAINTAINER FUJITA Tomonori <fujita.tomonori@lab.ntt.co.jp>
 
 RUN apt-get update
-RUN apt-get install -qy --no-install-recommends wget lv tcpdump emacs24-nox quagga telnet
+RUN apt-get install -qy --no-install-recommends wget lv tcpdump emacs24-nox
 
 ENV HOME /root
 WORKDIR /root
