@@ -2,7 +2,7 @@
 #
 # VERSION 0.0.1
 
-FROM ubuntu:14.04
+FROM golang:1.5
 
 MAINTAINER FUJITA Tomonori <fujita.tomonori@lab.ntt.co.jp>
 
