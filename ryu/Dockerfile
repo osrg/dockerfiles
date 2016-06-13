@@ -2,7 +2,7 @@
 #
 # VERSION 0.0.1
 
-FROM ubuntu:15.04
+FROM ubuntu:16.04
 
 MAINTAINER FUJITA Tomonori <fujita.tomonori@lab.ntt.co.jp>
 
