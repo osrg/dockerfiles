@@ -16,6 +16,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     python-eventlet \
     python-lxml \
     python-msgpack \
+    iproute2 \
  && rm -rf /var/lib/apt/lists/* \
  && curl -kL https://github.com/osrg/ryu/archive/master.tar.gz | tar -xvz \
  && mv ryu-master ryu \
