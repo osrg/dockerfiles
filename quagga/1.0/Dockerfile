@@ -1,4 +1,4 @@
-FROM golang
+FROM golang:1.8-jessie
 
 MAINTAINER ISHIDA Wataru <ishida.wataru@lab.ntt.co.jp>
 

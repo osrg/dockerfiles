@@ -2,7 +2,7 @@
 #
 # VERSION 0.0.1
 
-FROM golang
+FROM golang:1.8-jessie
 
 MAINTAINER FUJITA Tomonori <fujita.tomonori@lab.ntt.co.jp>
 
