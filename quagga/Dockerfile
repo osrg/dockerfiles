@@ -7,7 +7,7 @@ MAINTAINER FUJITA Tomonori <fujita.tomonori@lab.ntt.co.jp>
 RUN apt-get update
 RUN apt-get install -qy --no-install-recommends supervisor quagga telnet tcpdump wget git ca-certificates build-essential
 
-RUN wget --no-check-certificate -O go.tgz https://dl.google.com/go/go1.11.linux-amd64.tar.gz &&\
+RUN wget --no-check-certificate -O go.tgz https://dl.google.com/go/go1.12.1.linux-amd64.tar.gz &&\
     tar -C /usr/local -xzf go.tgz &&\
     rm go.tgz
 
